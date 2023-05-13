@@ -4,8 +4,8 @@ export const navbarLinks = [
     path: "/",
   },
   {
-    name: "Trading",
-    path: "/",
+    name: "Deposit",
+    path: "/deposit",
   },
   {
     name: "Platforms",

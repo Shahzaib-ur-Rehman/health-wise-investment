@@ -58,3 +58,12 @@ h3 {
 .orderBox:after{content: ""; width: 1px; height: 100%; background-color:rgba(15, 23, 28, 0.12); position:absolute; right:0; top:0; }
 .orInner{width: 50%; padding: 0 20px;}
 }
+
+
+/* #Withdrawal tr{border-color: var(--black);}
+#Withdrawal{overflow: scroll;}
+#Withdrawal tr td img{ margin-right:10px; }
+
+@media (min-width: 768px) {
+#Withdrawal{overflow: inherit;}
+} */
