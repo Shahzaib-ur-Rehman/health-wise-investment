@@ -17,6 +17,7 @@ body {
 }
 
 
+
 ::-webkit-scrollbar {
   width: 0.5em;
   height: 0.5em;
@@ -27,6 +28,8 @@ body {
   border: 0.1em solid #fff;
   border-radius: 100vw;
 }
+.navbar-toggler{position: absolute;right:15px;top: 15px; z-index: 99; background: var(--white);}
+.navbar-toggler.collapsed{background: var(--green);}
 img {
   max-width: 100%;
   height: auto;

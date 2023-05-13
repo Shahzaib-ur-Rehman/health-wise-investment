@@ -19,6 +19,7 @@ function MyApp({ Component, pageProps }) {
       darkgray: "#363D42",
       lightgray: "#F4F5F6",
       olive: "#88a532",
+      darkgreen:"#0b8141"
     },
   };
   return (
