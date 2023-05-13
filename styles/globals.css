@@ -2,3 +2,44 @@
 @import url('https://fonts.gstatic.com');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
+
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+
+/* Home Page Css */
+.iwTexBox {color: var(--white);padding: 20px 25px;}
+.iwTexBox .InnerBox{max-width: 400px;}
+.iwTexBox.bxLeft .InnerBox{ text-align:left; }
+.iwTexBox.bxRight{background-color: var(--gray);}
+
+
+.getStarted{ color: var(--white); padding: 115px 0; background: url(../public/image/getstarted.png) no-repeat center center / cover;}
+.getStarted h2{margin-bottom: 30px;}
+
+@media (min-width: 576px) {
+  .iwTexBox {padding: 50px 25px;}
+}
+@media (min-width: 992px) {
+  h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+h3 {
+  font-size: 32px;
+}
+  /* Home Banner Css start here  */
+  .BannerCaption h1{font-size: 23px; line-height: 1.5; margin-bottom: 80px;}
+  /* Home Banner Css end here  */
+
+  /* Home Page Css */
+.instantWtihdrawals{ padding: 80px 0 0 0;}
+.instantWtihdrawals br{display: block;}
+
+
+.iwTexBox.bxLeft{background-color: var(--black); padding-left: 9%;}
+ .numbers{padding: 80px 0;}
+
+}
+@media (min-width: 1200px) {
+  
+}
