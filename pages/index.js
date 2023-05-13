@@ -11,7 +11,7 @@ export default function Home() {
       <InstantWithDraws />
       <TradingStratigy />
       <Numbers/>
-      <GetStarted/>
+      <GetStarted heading={'Ready to get started?'} paragraph={' It only takes 3 minutes to get your account set up <br /> and ready for trading'}/>
     </div>
   );
 }

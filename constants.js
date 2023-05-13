@@ -1,4 +1,21 @@
-export const navbarLinks = ["About", "Trading", "Platforms", "Tools"];
+export const navbarLinks = [
+  {
+    name: "About",
+    path: "/",
+  },
+  {
+    name: "Trading",
+    path: "/",
+  },
+  {
+    name: "Platforms",
+    path: "/",
+  },
+  {
+    name: "Fees",
+    path: "/fees",
+  },
+];
 
 export const CorporateData = [
   "WealthWise Blog",

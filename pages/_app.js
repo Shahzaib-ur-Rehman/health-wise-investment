@@ -20,7 +20,8 @@ function MyApp({ Component, pageProps }) {
       lightgray: "#F4F5F6",
       olive: "#88a532",
       darkgreen:"#0b8141",
-      blue:"blue"
+      blue:"blue",
+      mediumgray: '#E3E4E5',
     },
   };
   return (

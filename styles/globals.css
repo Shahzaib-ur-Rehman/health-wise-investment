@@ -11,8 +11,6 @@
 .iwTexBox .InnerBox{max-width: 400px;}
 .iwTexBox.bxLeft .InnerBox{ text-align:left; }
 .iwTexBox.bxRight{background-color: var(--gray);}
-
-
 .getStarted{ color: var(--white); padding: 115px 0; background: url(../public/image/getstarted.png) no-repeat center center / cover;}
 .getStarted h2{margin-bottom: 30px;}
 
@@ -40,6 +38,23 @@ h3 {
  .numbers{padding: 80px 0;}
 
 }
-@media (min-width: 1200px) {
-  
+.orderResult{--bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-top: 40px;
+  max-width: 900px;
+}
+.orderBox{position: relative;}
+.orderResult h3{color: var(--sharpblack);}
+.orInner{width: 100%; padding: 0 15px; margin-bottom: 15px;}
+.orInner label{display: block;padding: 10px 0; font-size: 14px;}
+.orInner select{font-size: 16px; background-color: transparent;padding: 15px 15px;}
+.resultitem{display: flex;justify-content: space-between;border-top: 1px solid rgba(15, 23, 28, 0.12); padding: 10px 10px;}
+
+
+@media (min-width: 768px) {
+.orderBox:after{content: ""; width: 1px; height: 100%; background-color:rgba(15, 23, 28, 0.12); position:absolute; right:0; top:0; }
+.orInner{width: 50%; padding: 0 20px;}
 }

@@ -36,14 +36,12 @@ const PrimaryButton = styled(Button)`
   }
 `;
 
-const GetStarted = () => {
+const GetStarted = ({heading, paragraph}) => {
   return (
     <GetStartedWrapper className="getStarted text-center">
       <div className="container">
-        <Heading2>Ready to get started?</Heading2>
-        <p>
-          It only takes 3 minutes to get your account set up <br />
-          and ready for trading
+        <Heading2>{heading}</Heading2>
+        <p dangerouslySetInnerHTML={{__html:paragraph}}>
         </p>
         <br />
         <br />

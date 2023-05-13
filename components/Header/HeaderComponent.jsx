@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
 import { navbarLinks } from "../../constants";
+import Link from "next/link";
 
 const Header = styled.header`
   background: ${({ theme }) => theme.color.black};
@@ -97,9 +98,9 @@ const HeaderComponent = () => {
           </button>
 
           <div className="col-lg-2">
-            <a className="navbar-brand" href="#">
+            <Link className="navbar-brand" href="/">
               <img src="image/logo.png" width="91" height="62" />
-            </a>
+            </Link>
           </div>
 
           <div className="col-12 col-lg-6">
@@ -110,28 +111,23 @@ const HeaderComponent = () => {
               <MenuList className="menulilst">
                 {navbarLinks.map((linkItem) => {
                   return (
-                    <MenuListItem className="nav-item dropdown" key={linkItem}>
-                      <MenuListItemHyperLink
-                        className="nav-link dropdown-toggle"
-                        href="#"
-                        id="navbarDropdown"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        {linkItem}
+                    <MenuListItem className="nav-item dropdown" key={linkItem.name}>
+                      <MenuListItemHyperLink className="nav-link dropdown-toggle">
+                        <Link href={linkItem.path} className="text-white">
+                        {linkItem.name}
+                        </Link>
                       </MenuListItemHyperLink>
                     </MenuListItem>
                   );
                 })}
                 <MenuListItem className="nav-item">
-                  <MenuListItemHyperLink className="nav-link" href="#">
-                    Partners
+                  <MenuListItemHyperLink className="nav-link" href="/tools">
+                    <Link href="/tools" className="text-white">Tools</Link>
                   </MenuListItemHyperLink>
                 </MenuListItem>
                 <MenuListItem className="nav-item">
                   <MenuListItemHyperLink className="nav-link" href="#">
-                    Help
+                    <Link href="/calculate" className="text-white">Calculator</Link>
                   </MenuListItemHyperLink>
                 </MenuListItem>
               </MenuList>
