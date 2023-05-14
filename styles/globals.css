@@ -60,3 +60,56 @@ h3 {
 }
 
 
+
+
+.accountNav{background-color: var(--gray);padding: 20px 0 0 0;}
+.accountNav a{display: inline-block; color: var(--white); font-size: 14px; padding: 10px 8px;border-radius: 4px 4px 0px 0px;}
+.accountNav a.active, .accountNav a:hover{background-color: var(--white);color: var(--black);}
+.actBox{background-color:var(--white);box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);border-radius: 8px;overflow: hidden;}
+
+.boxHead{padding: 30px 25px 30px 40px; background-color: var(--sharpblack); color: var(--white);text-align: left;position: relative;}
+.boxBody{padding: 15px;}
+.infoList strong{font-size: 16px;}
+.boxBody .btn{display:block;}
+.boxHead:before{content: "";width: 90px; height: 90px; background-color: var(--green); position: absolute;
+left: -45px;top: -45px; transform: rotate(45deg);}
+.boxHead:after{content: "";width: 26px; height: 26px; position: absolute;left: 6px;top: 6px; background: url(../public/image/star.svg) no-repeat center center / cover;}
+.accountCategory{padding-top: 20px;}
+.reason{padding: 30px 0;}
+.accountCategory h2, .accountCategory h3, .accountCategory h4{color: var(--sharpblack);}
+#features tr td{ font-size: 14px; border-bottom-width:0px; padding-top: 10px; padding-bottom: 10px;}
+#features tr{border-bottom: 1px solid rgba(0, 0, 0, 0.12);}
+
+.trade{ padding: 30px 15px; margin:47px 0 15px 0; background: url(../public/image/exness-trader-banner-desktop.jpg.png) no-repeat right bottom;box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);}
+.tradeText{ background-color: rgba(0, 0, 0, 0.7); padding: 20px;}
+.tradeText, .tradeText h2{color: var(--white);}
+.boxHead{font-size: 16px;}
+.stand .boxHead h3{color: var(--white);}
+.pro .boxHead{color: var(--black); background-color: var(--lightgray);}
+.pro .boxHead:before, .pro .boxHead:after{display: none;}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+.boxBody{padding: 40px 40px;}
+.accountNav a{padding: 20px 44px 20px 45px;font-size: 16px;}
+.reason{padding: 50px 0;}
+.trade{font-size: 24px;}
+}
+
+@media (min-width: 992px) {
+.accountDetail {margin: -250px 0 0 0;position: relative;}
+}
+
+@media (min-width: 1200px) {
+  .accountDetail {margin: -316px 0 0 0;}
+  .reason{padding: 100px 0;}
+  #features tr td{font-size: 18px;}
+  .trade{padding: 60px; min-height: 614px; margin-bottom: 60px;}
+  .tradeText{max-width: 555px; background-color: transparent;}
+  .tradeText, .tradeText h2{color: var(--sharpblack);}
+}
+
+
