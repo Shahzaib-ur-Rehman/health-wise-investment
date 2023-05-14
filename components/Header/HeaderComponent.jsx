@@ -135,10 +135,10 @@ const HeaderComponent = () => {
           </div>
           <div className="col-12 col-lg-4">
             <RightMenuWrapper className="topAnchors">
-              <PrimaryButton href="#" className="btn">
+              <PrimaryButton href="/registration" className="btn">
                 Open Account
               </PrimaryButton>
-              <SecondaryButton href="#" className="btn">
+              <SecondaryButton href="/signin" className="btn">
                 Sign In
               </SecondaryButton>
               <Global href="#" className="d-inline-block">
